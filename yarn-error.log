@@ -1,0 +1,43 @@
+Arguments: 
+  /home/douglassantos/.nvm/versions/node/v18.3.0/bin/node /usr/share/yarn/bin/yarn.js add typescript ts-node-dev @types/express @types/jsonwebtoken @types/bcript -D
+
+PATH: 
+  /home/douglassantos/.local/bin:/home/douglassantos/.nvm/versions/node/v18.3.0/bin:/home/douglassantos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fbcript: Not found
+      at params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66145:18)
+      at self.callback (/usr/share/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1344:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "delivery-node-js-with-prisma",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:douglasgmsantos/delivery-node-js-with-prisma.git",
+    "author": "Douglas Santos <douglas_motasts@outlook.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
