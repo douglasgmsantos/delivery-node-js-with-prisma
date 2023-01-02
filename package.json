@@ -5,9 +5,12 @@
   "repository": "git@github.com:douglasgmsantos/delivery-node-js-with-prisma.git",
   "author": "Douglas Santos <douglas_motasts@outlook.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts"
+  },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
-    "@types/express": "^4.17.15",
+    "@types/express": "^4.17.13",
     "@types/jsonwebtoken": "^9.0.0",
     "prisma": "^4.8.0",
     "ts-node-dev": "^2.0.0",
@@ -16,7 +19,7 @@
   "dependencies": {
     "@prisma/client": "^4.8.0",
     "bcrypt": "^5.1.0",
-    "express": "^4.18.2",
+    "express": "^4.17.13",
     "jsonwebtoken": "^9.0.0"
   }
 }

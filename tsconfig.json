@@ -3,7 +3,12 @@
     "skipLibCheck": true,
     "strict": true,
     "rootDir": "src",
-    "noEmit": true
+    "noEmit": true,
+    "types": [
+      "node",
+      "express"
+    ],
+    "esModuleInterop": true,
   },
   "include": ["src/**/*"]
 }
