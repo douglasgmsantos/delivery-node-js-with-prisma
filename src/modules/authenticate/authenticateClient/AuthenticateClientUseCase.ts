@@ -13,12 +13,10 @@ export class AuthenticateClientUseCase {
     async exec({ username, password }: IAuthenticateClient) {
         const client = await prisma.clients.findFirst({ 
             where: {
-                username: {
-                    mode: 'insensitive'
-                }
+                username
             }
         })
-        
+
         if(!client)
             throw new Error('Username or password invalid!')
 
