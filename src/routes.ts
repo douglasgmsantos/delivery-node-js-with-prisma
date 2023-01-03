@@ -3,8 +3,8 @@ import { Router } from "express";
 import { ensureAuthenticateClient } from "./middlewares/ensureAuthenticateClient";
 import { ensureAuthenticateDeliveryman } from "./middlewares/ensureAuthenticateDeliveryman";
 
-import { AuthenticateClientController } from './modules/authenticate/authenticateClient/AuthenticateClientController';
-import { AuthenticateDeliverymanController } from './modules/authenticate/authenticateDeliveryman/AuthenticateDeliverymanController';
+import { AuthenticateClientController } from './modules/authenticate/useCases/authenticateClient/AuthenticateClientController';
+import { AuthenticateDeliverymanController } from './modules/authenticate/useCases/authenticateDeliveryman/AuthenticateDeliverymanController';
 
 import { CreateClientController } from './modules/clients/useCases/createClient/CreateClientController';
 import { CreateDeliverymanController } from "./modules/deliveryman/useCases/createDeliveryman/CreateDeliverymanController";
