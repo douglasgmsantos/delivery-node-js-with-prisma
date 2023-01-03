@@ -6,7 +6,8 @@ export class FindAllWithoutEndDateUseCase {
     async exec() {
         return await prisma.deliveries.findMany({
             where: {
-                end_at: null
+                end_at: null,
+                id_deliveryman: null
             }
         })
     }

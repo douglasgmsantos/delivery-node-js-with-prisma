@@ -11,7 +11,7 @@ interface IAuthenticateDelivery {
 export class AuthenticateDeliverymanUseCase {
 
     async exec({ username, password }: IAuthenticateDelivery) {
-        const client = await prisma.clients.findFirst({ 
+        const client = await prisma.deliveryman.findFirst({ 
             where: {
                 username
             }
