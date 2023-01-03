@@ -9,7 +9,7 @@ export class CreateDeliverymanController {
         const createClientUseCase =  new CreateDeliverymanUseCase();
         const result = await createClientUseCase.exec({ username, password })
 
-        resp.json(result)
+        return resp.json(result)
     }
 
 }
